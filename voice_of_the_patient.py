@@ -1,6 +1,6 @@
 # Step1: Record audio from microphone
 
-# dependencies: ffmpeg, portaudio, pyaudio (commands available in description)
+# dependencies: ffmpeg (portaudio/pyaudio only needed for optional local microphone recording via record_audio, unused in the deployed app)
 import logging
 import shutil
 import warnings

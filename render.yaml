@@ -1,0 +1,15 @@
+services:
+  - type: web_service
+    name: ai-skin-specialist
+    env: python
+    pythonVersion: 3.12
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: GROQ_API_KEY
+      - key: DEEPGRAM_API_KEY
+      - key: WHISPER_MODEL
+      - key: GROQ_MODEL
+      - key: DEEPGRAM_TTS_MODEL
